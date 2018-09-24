@@ -29,7 +29,6 @@ object MicroserviceServer extends LazyLogging with App {
   //binding stream of tcp requests
   val connections: Source[IncomingConnection, Future[ServerBinding]] = Tcp().bind("127.0.0.1", 8888)
 
-  val operators: Seq[(Char, ((Int, Int) => Int))] = Seq(('+', (a, b) => a + b), ('-', (a, b) => a - b))
 
   def parseInput(clientInput: String): String = {
     val operators: Seq[(Char, ((Int, Int) => Int))] = Seq(('+', (a, b) => a + b), ('-', (a, b) => a - b))
