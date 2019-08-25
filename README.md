@@ -1,5 +1,5 @@
-# Akka streams playground
-Test project to improve understanding of streaming
+# TCP Calculator
+A little small project made whilst trying to improve my understanding of the fundamentals of the AKKA-HTTP framework. It allows for calculations to be made over TCP. Hopefully in the future I can do something more productive.
 
 #Barebone tcp server
 To run the server:
